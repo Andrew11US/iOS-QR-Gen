@@ -15,6 +15,7 @@
 		01BEE4EB2419820100D7A716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BEE4E92419820100D7A716 /* LaunchScreen.storyboard */; };
 		01BEE4F62419820100D7A716 /* QR_GenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BEE4F52419820100D7A716 /* QR_GenTests.swift */; };
 		01BEE5012419820100D7A716 /* QR_GenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BEE5002419820100D7A716 /* QR_GenUITests.swift */; };
+		01BEE5132419838600D7A716 /* QRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BEE5122419838600D7A716 /* QRManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		01BEE4FC2419820100D7A716 /* QR GenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR GenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BEE5002419820100D7A716 /* QR_GenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_GenUITests.swift; sourceTree = "<group>"; };
 		01BEE5022419820100D7A716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BEE5122419838600D7A716 /* QRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,11 @@
 		01BEE4DD2419820000D7A716 /* QR Gen */ = {
 			isa = PBXGroup;
 			children = (
-				01BEE4DE2419820000D7A716 /* AppDelegate.swift */,
-				01BEE4E02419820000D7A716 /* SceneDelegate.swift */,
-				01BEE4E22419820000D7A716 /* ViewController.swift */,
-				01BEE4E42419820000D7A716 /* Main.storyboard */,
+				01BEE50E2419830C00D7A716 /* Storyboards */,
+				01BEE50F2419831E00D7A716 /* Controllers */,
+				01BEE5102419834000D7A716 /* Model */,
 				01BEE4E72419820100D7A716 /* Assets.xcassets */,
-				01BEE4E92419820100D7A716 /* LaunchScreen.storyboard */,
-				01BEE4EC2419820100D7A716 /* Info.plist */,
+				01BEE5112419834600D7A716 /* Support Files */,
 			);
 			path = "QR Gen";
 			sourceTree = "<group>";
@@ -126,6 +126,41 @@
 				01BEE5022419820100D7A716 /* Info.plist */,
 			);
 			path = "QR GenUITests";
+			sourceTree = "<group>";
+		};
+		01BEE50E2419830C00D7A716 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				01BEE4E92419820100D7A716 /* LaunchScreen.storyboard */,
+				01BEE4E42419820000D7A716 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		01BEE50F2419831E00D7A716 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01BEE4E22419820000D7A716 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		01BEE5102419834000D7A716 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01BEE5122419838600D7A716 /* QRManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		01BEE5112419834600D7A716 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01BEE4DE2419820000D7A716 /* AppDelegate.swift */,
+				01BEE4E02419820000D7A716 /* SceneDelegate.swift */,
+				01BEE4EC2419820100D7A716 /* Info.plist */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01BEE5132419838600D7A716 /* QRManager.swift in Sources */,
 				01BEE4E32419820000D7A716 /* ViewController.swift in Sources */,
 				01BEE4DF2419820000D7A716 /* AppDelegate.swift in Sources */,
 				01BEE4E12419820000D7A716 /* SceneDelegate.swift in Sources */,
@@ -435,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = PTRW36GG78;
 				INFOPLIST_FILE = "QR Gen/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -454,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = PTRW36GG78;
 				INFOPLIST_FILE = "QR Gen/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
