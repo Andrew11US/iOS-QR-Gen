@@ -1,0 +1,18 @@
+PODS:
+  - EFQRCode (5.1.6):
+    - EFQRCode/Core (= 5.1.6)
+  - EFQRCode/Core (5.1.6)
+
+DEPENDENCIES:
+  - EFQRCode (~> 5.1.6)
+
+SPEC REPOS:
+  trunk:
+    - EFQRCode
+
+SPEC CHECKSUMS:
+  EFQRCode: a7ea2e517912f5bf6ba258b631327a83cd8084a5
+
+PODFILE CHECKSUM: c5e6f2b32a2dcb36979bedc8f97c2051740af936
+
+COCOAPODS: 1.8.4

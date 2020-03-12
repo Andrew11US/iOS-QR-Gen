@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import EFQRCode
+import CoreImage
 
 class ViewController: UIViewController {
     
@@ -21,7 +23,17 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        qrImage.image = UIImage(ciImage: QrManager.generateQR(from: "hello")!)
+//        qrImage.image = UIImage(ciImage: QrManager.generateQR(from: "hello")!)
+        if let tryImage = EFQRCode.generate(
+            content: "https://github.com/EFPrefix/EFQRCode",
+            watermark: UIImage(named: "circle.png")?.cgImage,
+            pointShape: .diamond
+        ) {
+            print("Create QRCode image success: \(tryImage)")
+            qrImage.image = UIImage(cgImage: tryImage)
+        } else {
+            print("Create QRCode image failed!")
+        }
     }
 
 
